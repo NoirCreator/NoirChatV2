@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NoirChat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <!-- ЭКРАН ЧАТОВ -->
+
+    <div id="chats-screen">
+
+
+        <header>
+
+            <h1>
+                NoirChat
+            </h1>
+
+
+            <button class="add-btn">
+                +
+            </button>
+
+
+        </header>
+
+
+
+        <div class="chats">
+
+
+            <div class="chat" onclick="openChat('Alex')">
+
+
+                <div class="avatar">
+                    A
+                </div>
+
+
+                <div class="chat-info">
+
+                    <h3>
+                        Alex
+                    </h3>
+
+                    <p>
+                        Welcome to NoirChat
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="chat" onclick="openChat('Noir Team')">
+
+
+                <div class="avatar">
+                    N
+                </div>
+
+
+                <div class="chat-info">
+
+                    <h3>
+                        Noir Team
+                    </h3>
+
+                    <p>
+                        Project updates
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- ЭКРАН ЧАТА -->
+
+
+    <div id="chat-screen" class="hidden">
+
+
+        <div class="chat-header">
+
+
+            <button onclick="backToChats()">
+
+                ←
+
+            </button>
+
+
+
+            <div class="user">
+
+
+                <div class="avatar small">
+
+                    A
+
+                </div>
+
+
+
+                <div>
+
+                    <h3 id="chat-name">
+
+                        Alex
+
+                    </h3>
+
+
+                    <p class="online">
+
+                        ● Online
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div id="messages">
+
+
+        </div>
+
+
+
+
+        <div class="input-area">
+
+
+            <input 
+            id="message-input"
+            placeholder="Message">
+
+
+
+            <button onclick="sendMessage()">
+
+                ➤
+
+            </button>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- ПРОФИЛЬ -->
+
+
+    <div id="profile-screen" class="hidden">
+
+
+        <div class="profile-avatar">
+
+            N
+
+        </div>
+
+
+        <h2>
+            Noir User
+        </h2>
+
+
+        <p class="online">
+
+            ● Online
+
+        </p>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- КОНТАКТЫ -->
+
+
+    <div id="contacts-screen" class="hidden">
+
+
+        <header>
+
+            <h1>
+                Contacts
+            </h1>
+
+        </header>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- НИЖНЯЯ ПАНЕЛЬ -->
+
+
+    <nav>
+
+
+        <button onclick="showScreen('chats')">
+
+            💬
+
+        </button>
+
+
+
+        <button onclick="showScreen('contacts')">
+
+            👥
+
+        </button>
+
+
+
+        <button onclick="showScreen('profile')">
+
+            ⚙️
+
+        </button>
+
+
+    </nav>
+
+
+
+</div>
+
+
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
