@@ -473,3 +473,12 @@ nav button {
     display: none;
 
 }
+#chat-screen {
+    height: 100vh;
+    position: relative;
+}
+
+
+#messages {
+    padding-bottom: 90px;
+}
